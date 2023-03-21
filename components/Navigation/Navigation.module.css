@@ -1,0 +1,27 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+
+  padding: 16px 0;
+}
+
+.rightNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+@media print {
+  .navigation {
+    display: none;
+  }
+}
+
+.navigation button {
+  border: solid 1px var(--accent-color);
+  border-radius: 4px;
+  background: none;
+  padding: 8px 16px;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  position: fixed;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color);
+}
+
+.content {
+  width: clamp(20ch, 75%, 80ch);
+  margin: auto;
+}
+
+@media print {
+  .wrapper {
+    position: absolute;
+  }
+}
