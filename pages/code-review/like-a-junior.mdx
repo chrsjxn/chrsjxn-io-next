@@ -1,0 +1,84 @@
+import { MdxLayout } from '@/components/MdxLayout/MdxLayout'
+import Head from 'next/head'
+
+<Head>
+  <title>chrsjxn.io - Reviewing code like a junior engineer</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>"
+  />
+</Head>
+
+# Reviewing code like a junior engineer
+
+11/05/2020
+
+I've met a lot of engineers who don't feel comfortable offering feedback on code they read.
+Most of them are junior engineers, but I've seen it with very senior engineers, too.
+
+And this is completely natural. When you're learning on the job, code review is a very
+one-sided process. You push up your changes and post them for review. You get your first
+feedback, and it's all about patterns and best practices you didn't know! If you're like me,
+you feel a bit of impostor syndrome, and you learn from this feedback. When you push your next
+set of changes, you get more feedback and you learn something else.
+
+Every time this happens, you also learn a pattern that was never intended:
+
+"Code reviewers need to know more than code authors."
+
+It can be comforting, knowing that your code is always being reviewed by an expert. But if you
+believe this, you're devaluing your own contributions and giving up your seat at the table.
+
+So how do you contribute like a junior engineer?
+
+## 1. Read the changes to code your team maintains
+
+This one may seem obvious, but it's important. How can you offer feedback if you don't read
+the code?
+
+You should also note that I said "read" and not "review" here. Being familiar with the changes
+to your code base is useful, even if you don't have comments or questions on every change.
+
+## 2. Highlight code that is hard for you to understand, and explain why
+
+Are the variable names hard to understand? Is it unclear what parameters mean or where they
+come from? Are the functions too big?
+
+We read code much more often than we write it. Every time we fix a bug or onboard a new team
+member, we read the code to remind ourselves of what's happening under the hood. Feedback like
+this doesn't require a deep technical expertise, but it helps make the code easier to read
+when we come back to it.
+
+And just in case you're not convinced this is important, just think about one of my favorite
+programming memes. "What idiot wrote this trash? `git blame` Oh. That idiot is me!"
+
+This gets even more relevant as I get more senior. With more responsibilities and larger
+projects, it takes me a lot longer to revisit code that I wrote before.
+
+![Meme with Thanos not recognizing his code from last month](/images/code-last-month.png)
+
+(I had this meme saved, but now I don't know where it came from!)
+
+## 3. Ask questions, especially about why
+
+Software engineering is all about choices and trade offs you make between different
+alternatives. Asking questions about why a choice was made, or what alternatives were
+considered, can tell you what's most valuable to your team. Or it can highlight alternatives
+that are easier to test, more performant, or better in a less obvious way.
+
+## 4. That's it!
+
+You don't have to be an expert to review code that your team is writing! Asking questions
+helps you learn how the code works and what's important. Reading the code and highlighting
+areas that are hard to understand will lead to code that is more maintainable for the team as
+a whole.
+
+If you're worried about asking too many questions on GitHub, or you don't feel comfortable
+giving your feedback in that way, I recommend scheduling some time with the author to do a
+pair review. You can cover a lot of topics in a half hour session, and that 1:1 time can let
+you ask questions that aren't relevant to the rest of the team.
+
+Hopefully these tips will be useful to you the next time you do a code review, whether you're
+junior or not!
+
+export default ({children}) => <MdxLayout>{children}</MdxLayout>

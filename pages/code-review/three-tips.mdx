@@ -1,0 +1,87 @@
+import { MdxLayout } from '@/components/MdxLayout/MdxLayout'
+import Head from 'next/head'
+
+<Head>
+  <title>chrsjxn.io - Three tips to be a better code reviewer today</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌊</text></svg>"
+  />
+</Head>
+
+# Three tips to be a better code reviewer today
+
+11/13/2020
+
+As a professional software developer, code review is a big part of the job! It's often a
+requirement for shipping your work, and understanding code well enough to give feedback takes
+time.
+
+So engineering teams often turn to automation to help reduce the cost of code reviews. Test
+coverage and static analysis tools help avoid bugs and vulnerabilities. Linters and formatters
+keep devs from spending time and energy on code style.
+
+And these tools are great! But they miss the human aspect of professional development. With
+that in mind, here are three tips to help you be a better code reviewer for your team, no
+matter how experienced you are or what technology you use!
+
+## 1. Do the tests document the code well enough?
+
+Comments get out of date quickly. Design docs get lost. When you revisit a project, sometimes
+the only documentation you have is the tests.
+
+If you have great tests, that might not be too bad. If you have no tests, it could be a
+disaster!
+
+As a starting point for feedback about the tests, ask yourself these questions:
+
+- Can I call this function, use this library, or render this component using the tests as examples?
+- Do the tests tell me what inputs are valid?
+- Do the tests tell me what inputs will throw an error or have invalid results?
+
+## 2. What parts of the code were the hardest to understand?
+
+After a feature has shipped, it needs to be maintained. Eventually, someone will read this
+code who has never seen it before, and they'll need to understand it well enough to change it.
+
+That person reading the code for the first time might even be you! Lots of engineers have done
+a `git blame` and realized they were the original author of the code they were just
+complaining about.
+
+![git blame as a spiderman looking at spiderman meme](/images/spidermanMeme.jpg)
+[/r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/comments/6p9syt/the_problem_with_git_blame/)
+
+Thankfully, code review is a similar experience. As a reviewer, you're probably reading the
+code for the first time, and you don't have all the context of the code author. If any of the
+code was difficult to understand when you read it, offer some feedback to improve it!
+
+- Could the names be clearer, or more descriptive?
+- Could complex logic be broken down into utility functions?
+- Could the documentation be improved with a comment? Or a more targetted test case?
+
+## 3. Explain why
+
+This last one is a little different from the first two, because it's about how you give your
+feedback, not about what feedback you give. And it's much simpler.
+
+When you give feedback during a code review, explain why!
+
+If you're an expert, code review is a tool to teach other engineers. Making suggestions and
+explaining why is how you do that.
+
+And if you're not teaching, explaining why helps to build empathy and open discussions about
+other options.
+
+You don't have to write a novel, but even a little explanation helps. For example, "This boolean logic was tough for me to follow. Can you split it into a few utility
+  functions?"
+
+## What's next?
+
+Being great at code reviews is a skill that takes a lot of practice, and there are a ton of
+topics that can't be covered in a quick list like this. Some of them are technical, like
+language specific best practices, and some of them are interpersonal, like offering effective
+feedback.
+
+But hopefully these tips will help you and your team get more value out of your code reviews!
+
+export default ({children}) => <MdxLayout>{children}</MdxLayout>
