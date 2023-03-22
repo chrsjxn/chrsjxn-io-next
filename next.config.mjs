@@ -1,5 +1,8 @@
 import mdx from '@next/mdx'
 import rehypeHighlight from 'rehype-highlight'
+import rehypeSlug from 'rehype-slug'
+import rehypeAutolinkHeadings from 'rehype-autolink-headings'
+
 import hljs from 'highlight.js'
 import svelte from 'highlightjs-svelte'
 
@@ -13,7 +16,9 @@ const withMDX = mdx({
     rehypePlugins: [
       [rehypeHighlight, {
         ignoreMissing: true,
-      }]
+      },],
+      rehypeSlug,
+      rehypeAutolinkHeadings,
     ],
     providerImportSource: "@mdx-js/react",
   },
