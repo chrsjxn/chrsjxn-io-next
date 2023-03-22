@@ -11,8 +11,8 @@ export default function About() {
       </Polaroid>
     </div>
     <p>
-      I am a Staff Software Engineer, focused on web technology, tooling, and performance. Formerly:
-      DoorDash, Zendesk.
+      I am a Staff Software Engineer, focused on web technology, tooling, and 
+      performance. Formerly: DoorDash, Zendesk.
     </p>
     <p>I love code review, with an emphasis on useful and empathetic feedback.</p>
     <p>I believe diverse voices improve products, teams, and the world.</p>
