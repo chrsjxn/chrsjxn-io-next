@@ -1,5 +1,5 @@
-import { Navigation } from '@/components/Navigation/Navigation'
 import './globals.css'
+import { Navigation } from '@/components/Navigation/Navigation'
 import { Footer } from '@/components/Footer/Footer'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
