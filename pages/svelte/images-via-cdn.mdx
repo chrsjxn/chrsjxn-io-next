@@ -1,5 +1,7 @@
-import { MdxLayout } from '@/components/MdxLayout/MdxLayout'
 import Head from 'next/head'
+import Image from 'next/image'
+
+import polaroidComponentDemo from '@/public/images/PolaroidComponentDemo.png'
 
 <Head>
   <title>chrsjxn.io - Building a blog with Svelte: Fetching images via CDN</title>
@@ -106,6 +108,9 @@ And even if you're not using Netlify to host your blog, you can use `@rollup/plu
 
 Of course, how could I end this post without including at least one image? So here's a screenshot of the [polaroid component I've been hacking on](https://www.chrsjxn.io/components/polaroid), rendered in dark mode, with images fetched from Cloudinary:
 
-![Polaroid component demo. Four polaroid images stack on top of each other, slightly haphazardly. One shows SF during the wildfires, when the sky was orange and dark. One shows the author, looking at his laptop and thinking. And the other two are close ups of birds, one seagull and one raven.](/images/PolaroidComponentDemo.png)
-
-export default ({children}) => <MdxLayout>{children}</MdxLayout>
+<Image
+  src={polaroidComponentDemo}
+  alt="Polaroid component demo. Four polaroid images stack on top of each other, slightly haphazardly. One shows SF during the wildfires, when the sky was orange and dark. One shows the author, looking at his laptop and thinking. And the other two are close ups of birds, one seagull and one raven."
+  width="800"
+  layout="responsive"
+/>

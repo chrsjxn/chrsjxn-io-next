@@ -1,4 +1,3 @@
-import { MdxLayout } from '@/components/MdxLayout/MdxLayout'
 import Head from 'next/head'
 
 <Head>
@@ -183,5 +182,3 @@ export const posts = [
 You can see the dynamic imports in action by visiting a post on [my blog](https://www.chrsjxn.io/). If you open up dev tools, you should see the core bundles loaded on the home page, and a small additional bundle loaded when clicking into any post. They're all around 3kB, because they include the markdown content as well as the Svelte component that renders the post, and they should cache very well as long as the content doesn't change.
 
 Hopefully this was useful for you! If you have questions or comments, you can always find me [on twitter](https://twitter.com/c_jackson_js)!
-
-export default ({children}) => <MdxLayout>{children}</MdxLayout>

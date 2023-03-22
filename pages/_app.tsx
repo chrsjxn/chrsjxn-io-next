@@ -1,6 +1,7 @@
 import { Navigation } from '@/components/Navigation/Navigation'
 import './globals.css'
 import { Footer } from '@/components/Footer/Footer'
+import { AppProps } from 'next/app'
 
 export const metadata = {
   title: 'chrsjxn.io',
@@ -9,22 +10,17 @@ export const metadata = {
   }
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function App({
+  Component,
+  pageProps,
+}: AppProps) {
   return (
-    <html lang="en">
-      <body>
-        <div className="center-content">
-          <Navigation />
-          <main>
-            {children}
-          </main>
-          <Footer />
-        </div>
-      </body>
-    </html>
+    <div className="center-content">
+      <Navigation />
+      <main>
+        <Component {...pageProps} />
+      </main>
+      <Footer />
+    </div>
   )
 }

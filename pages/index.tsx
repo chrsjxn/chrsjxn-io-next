@@ -1,4 +1,4 @@
-import styles from './page.module.css'
+import styles from './index.module.css'
 import { categories, sortedPosts } from '@/lib/posts'
 import Link from 'next/link'
 import React from 'react'
