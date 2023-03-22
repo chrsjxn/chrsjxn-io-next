@@ -1,11 +1,15 @@
 import styles from './index.module.css'
 import { categories, sortedPosts } from '@/lib/posts'
+import Head from 'next/head'
 import Link from 'next/link'
 import React from 'react'
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>chrsjxn.io - Writing</title>
+      </Head>
       <h1>Writing</h1>
         {categories.map(category => {
           return <React.Fragment key={category}>
