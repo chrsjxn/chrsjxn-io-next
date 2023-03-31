@@ -6,6 +6,7 @@ export const Footer = () => {
   return <div className={styles.wrapper}>
     <div className={styles.content}>
       © Chris Jackson
+      {" "}
       {currentYear}
       {" - "}
       <a href="https://github.com/chrsjxn/chrsjxn-io-ssr" rel="noreferrer noopener">
